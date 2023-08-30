@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyles/video.css" />
+    <link rel="stylesheet" href="mystyles/header.css" />
+    <link rel="stylesheet" href="mystyles/general.css" />
+    <link rel="stylesheet" href="mystyles/sidebar.css" />
+    <link rel="stylesheet" href="mystyles/links.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Youtube Clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hm-menu" src="icons/hamburger-menu.svg" alt="" />
+        <img class="yt-logo" src="icons/youtube-logo.svg" alt="" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!--put position absolute inside position relative-->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search With Your Voice</div>
+        </button>
+      </div>
+
+      <div class="right-section">
+        <div class="upload-icon-cont">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="yt-apps-cont">
+          <img class="yt-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">Youtube apps</div>
+        </div>
+
+        <div class="notif-cont">
+          <div class="notification-icon">
+            <img class="notif-icon" src="icons/notifications.svg" />
+            <div class="notification-count">3</div>
+            <div class="tooltip">Notifications</div>
+          </div>
+        </div>
+
+        <img class="current-usr-pic" src="pps/pfp.jpg" />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="nav">
+        <a class="nav-link active">
+          <i class="material-icons">home</i>
+          <span>Home</span>
+        </a>
+        <a class="nav-link">
+          <i class="material-icons">local_fire_department</i>
+          <span>Trending</span>
+        </a>
+        <a class="nav-link">
+          <i class="material-icons">subscriptions</i>
+          <span>Subscriptions</span>
+        </a>
+        <hr />
+        <a class="nav-link">
+          <i class="material-icons">library_add_check</i>
+          <span>Library</span>
+        </a>
+        <a class="nav-link">
+          <i class="material-icons">history</i>
+          <span>History</span>
+        </a>
+        <a class="nav-link">
+          <i class="material-icons">play_arrow</i>
+          <span>Your Videos</span>
+        </a>
+        <a class="nav-link">
+          <i class="material-icons">watch_later</i>
+          <span>Watch Later</span>
+        </a>
+        <a class="nav-link">
+          <i class="material-icons">thumb_up</i>
+          <span>Liked Videos</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="videogrid">
+
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/IoTL9xZOdP0">
+              <img class="thumbnail" src="thumbnails/carry1.webp" />
+            </a>
+            <div class="video-time">9:10</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/carry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/IoTL9xZOdP0"
+                  >MAGGIE KHAO BODY BANAO | CARRY MINATI</a
+                >
+              </p>
+              <p class="video-author">CarryMinati &#10003;</p>
+              <p class="video-stats">23M views · 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/40XdJ9orIRY">
+              <img class="thumbnail" src="thumbnails/harry1.webp" />
+            </a>
+            <div class="video-time">11:29</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/harry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/40XdJ9orIRY"
+                  >How to Actually Get a Job in Web Development (Get Hired) 👨‍💻</a
+                >
+              </p>
+              <p class="video-author">CodeWithHarry &#10003;</p>
+              <p class="video-stats">1M views · 10 days ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/Rr8-E-Eh9X4">
+              <img class="thumbnail" src="thumbnails/Waff1.webp" />
+            </a>
+            <div class="video-time">10:38</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/Waffairs.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/Rr8-E-Eh9X4"
+                  >China’s Foreign Minister is Missing after Affair rumours | चीन के विदेश मंत्री चिन गांग हुए ‘लापता’</a
+                >
+              </p>
+              <p class="video-author">World Affairs &#10003;</p>
+              <p class="video-stats">500k views · 4 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/H585GHGI6rA">
+              <img class="thumbnail" src="thumbnails/harry2.webp" />
+            </a>
+            <div class="video-time">24:50</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/harry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/H585GHGI6rA"
+                  >5 Mind Blowing AI Tools You Wont Believe Existed (Use These) 🔥</a
+                >
+              </p>
+              <p class="video-author">CodeWithHarry &#10003;</p>
+              <p class="video-stats">200k views · 10 days ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/cRlYOHIwUGw">
+              <img class="thumbnail" src="thumbnails/music1.webp" />
+            </a>
+            <div class="video-time">24:50</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/music.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/cRlYOHIwUGw"
+                  >Royalty 👑 I will become the best of all 🎧🔥</a>                >
+              </p>
+              <p class="video-author">Unstoppable Music &#10003;</p>
+              <p class="video-stats">4M views · 9 Months ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/5XVoRGhrhZk">
+              <img class="thumbnail" src="thumbnails/carry2.webp" />
+            </a>
+            <div class="video-time">14:32</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/carry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/5XVoRGhrhZk"
+                  >DAILY VLOGGERS PARODY 😘 | CARRYMINATI</a>                >
+              </p>
+              <p class="video-author">CarryMinati&#10003;</p>
+              <p class="video-stats">20M views · 3 days ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/IoTL9xZOdP0">
+              <img class="thumbnail" src="thumbnails/carry1.webp" />
+            </a>
+            <div class="video-time">9:10</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/carry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/IoTL9xZOdP0"
+                  >MAGGIE KHAO BODY BANAO | CARRY MINATI</a
+                >
+              </p>
+              <p class="video-author">CarryMinati &#10003;</p>
+              <p class="video-stats">23M views · 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/40XdJ9orIRY">
+              <img class="thumbnail" src="thumbnails/harry1.webp" />
+            </a>
+            <div class="video-time">11:29</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/harry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/40XdJ9orIRY"
+                  >How to Actually Get a Job in Web Development (Get Hired) 👨‍💻</a
+                >
+              </p>
+              <p class="video-author">CodeWithHarry &#10003;</p>
+              <p class="video-stats">1M views · 10 days ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/Rr8-E-Eh9X4">
+              <img class="thumbnail" src="thumbnails/Waff1.webp" />
+            </a>
+            <div class="video-time">10:38</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/Waffairs.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/Rr8-E-Eh9X4"
+                  >China’s Foreign Minister is Missing after Affair rumours | चीन के विदेश मंत्री चिन गांग हुए ‘लापता’</a
+                >
+              </p>
+              <p class="video-author">World Affairs &#10003;</p>
+              <p class="video-stats">500k views · 4 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/H585GHGI6rA">
+              <img class="thumbnail" src="thumbnails/harry2.webp" />
+            </a>
+            <div class="video-time">24:50</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/harry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/H585GHGI6rA"
+                  >5 Mind Blowing AI Tools You Wont Believe Existed (Use These) 🔥</a
+                >
+              </p>
+              <p class="video-author">CodeWithHarry &#10003;</p>
+              <p class="video-stats">200k views · 10 days ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/cRlYOHIwUGw">
+              <img class="thumbnail" src="thumbnails/music1.webp" />
+            </a>
+            <div class="video-time">24:50</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/music.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/cRlYOHIwUGw"
+                  >Royalty 👑 I will become the best of all 🎧🔥</a>                >
+              </p>
+              <p class="video-author">Unstoppable Music &#10003;</p>
+              <p class="video-stats">4M views · 9 Months ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://youtu.be/5XVoRGhrhZk">
+              <img class="thumbnail" src="thumbnails/carry2.webp" />
+            </a>
+            <div class="video-time">14:32</div>
+          </div>
+          <div class="vid-info-grid">
+            <div class="pp"><img class="pp1" src="PPs/carry.jpg" /></div>
+            <div class="info">
+              <p class="video-title">
+                <a class="vid-link" href="https://youtu.be/5XVoRGhrhZk"
+                  >DAILY VLOGGERS PARODY 😘 | CARRYMINATI</a>                >
+              </p>
+              <p class="video-author">CarryMinati&#10003;</p>
+              <p class="video-stats">20M views · 3 days ago</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+  </body>
+</html>
